@@ -12,10 +12,12 @@ body {
 .navbar {
   /* position: absolute; */
   width: 100%;
+  background-color: #1289f9;
 }
 
 .navbar-collapse {
   flex-grow: unset;
+  margin-left: 30px;
 }
 .navbar .container-fluid {
   justify-content: center;
@@ -30,6 +32,8 @@ body {
 
 /* BANNER SECTION STARTS .. */
 .banner-section {
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #1289f9;
   height: fit-content;
 }
@@ -57,6 +61,8 @@ body {
 /* WHY SECTION STARTS.. */
 .why-section {
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .why-card {
   background-color: #fff;
@@ -250,6 +256,19 @@ body {
 .card-white {
   background-color: #fff;
 }
+
+/* FAQ section Starts .. */
+.faq-section {
+  margin-top: 30px;
+  background-color: #fcd427;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.faq-section h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* Footer Section Starts .. */
 
 #footer {
   margin-top: 30px;
