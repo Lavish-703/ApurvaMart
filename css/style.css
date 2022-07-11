@@ -23,6 +23,9 @@ body {
   justify-content: center;
 }
 
+.navbar ul li a {
+  color: #fff;
+}
 @media screen and (max-width: 767px) {
   .navbar .container-fluid {
     justify-content: space-between;
