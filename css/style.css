@@ -59,6 +59,10 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+.gplay {
+  width: 45%;
+  height: auto;
+}
 /* BANNER SECTION ENDS.. */
 
 /* WHY SECTION STARTS.. */
