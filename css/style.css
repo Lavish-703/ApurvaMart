@@ -26,6 +26,9 @@ body {
 .navbar ul li a {
   color: #fff;
 }
+.dropdown-menu .dropdown-item {
+  color: #000;
+}
 @media screen and (max-width: 767px) {
   .navbar .container-fluid {
     justify-content: space-between;
@@ -41,11 +44,12 @@ body {
   height: fit-content;
 }
 
-.banner-section h4 {
+.banner-section h2 {
   position: relative;
   padding-bottom: 20px;
+  color: #fdd008;
 }
-.banner-section h4:after {
+.banner-section h2:after {
   content: "";
   display: block;
   position: absolute;
@@ -54,12 +58,17 @@ body {
   background: #fff;
   bottom: 0px;
 }
+.banner-section p {
+  color: #fff;
+  font-size: 1.5rem;
+}
 .banner-head {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .gplay {
+  max-width: 250px;
   width: 45%;
   height: auto;
 }
@@ -83,12 +92,22 @@ body {
   width: 50px;
   height: 50px;
 }
+.why-card {
+  transition: all 0.5s ease;
+}
+.why-card:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease;
+}
 .why-card h3 {
+  margin-left: 10px;
   color: #1289f9;
+  font-size: 2rem;
 }
 .why-card p {
   padding-top: 10px;
   text-align: left;
+  font-size: 1.2rem;
 }
 .c1 {
   padding-right: 1.5rem;
@@ -114,11 +133,11 @@ body {
   background: #fcd427;
   padding: 60px 0;
 }
-/* .cat-content {
+.cat-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-} */
+}
 .cat-content h4 {
   position: relative;
   padding-bottom: 20px;
@@ -132,6 +151,9 @@ body {
   background: #fff;
   bottom: 0px;
 }
+.cat-content button {
+  width: fit-content;
+}
 .cat-items ul {
   list-style: none;
   text-align: center;
@@ -143,12 +165,13 @@ body {
   width: 33.33%;
   padding: 15px;
 }
-.cat-items ul li:first-child {
+/* .cat-items ul li:first-child {
   margin-left: 10%;
-}
+} */
 .cat-items ul li img {
   width: 100%;
-  height: auto;
+  max-width: 250px;
+  height: 200px;
 }
 .bg-1 {
   background-color: #e82b53;
@@ -164,6 +187,19 @@ body {
 }
 .bg-5 {
   background-color: #692a70;
+}
+@media screen and (max-width: 991px) {
+  .cat-items ul {
+    padding-left: 0;
+  }
+  .cat-items ul li {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .cat-items ul li {
+    width: 100%;
+  }
 }
 /* CATEGORY SECTION ENDS..*/
 
