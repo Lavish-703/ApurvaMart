@@ -7,6 +7,12 @@
     <title>Document</title>
 
     <!-- CSS only -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -115,14 +121,14 @@
     <section class="banner-section">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-4 banner-head">
+          <div class="col-12 col-md-4 banner-head active pop">
             <h2>Welcome to <strong class="text-white">ApurvaMart !</strong></h2>
             <!-- <h4></h4> -->
             <p>
               Get farm fresh, hygienic and healthy food items at your doorstep
             </p>
           </div>
-          <div class="col-12 col-md-8">
+          <div class="col-12 col-md-8 active slide-right">
             <div class="d-flex justify-content-evenly py-3">
               <img src="img/gplay.png" alt="" class="gplay" />
               <img src="img/appstore.png" alt="" class="gplay" />
@@ -142,7 +148,7 @@
         </h4>
         <div class="row">
           <div class="col-12 col-sm-6 col-md-6 c1">
-            <div class="why-card">
+            <div class="why-card active slide-left">
               <div class="d-flex">
                 <img src="img/card-img.png" alt="" class="card-img" />
                 <h3>Genuine Price</h3>
@@ -151,7 +157,7 @@
             </div>
           </div>
           <div class="col-12 col-sm-6 col-md-6 c2">
-            <div class="why-card">
+            <div class="why-card active slide-right">
               <div class="d-flex">
                 <img src="img/card-img.png" alt="" class="card-img" />
                 <h3>Express Delivery</h3>
@@ -194,13 +200,13 @@
     <section class="category-section">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-lg-4 cat-content">
+          <div class="col-12 col-lg-4 cat-content reveal fade-bottom">
             <h2>Explore our wide range of Cateories</h2>
             <!-- <h4>Lorem ipsum dolor init</h4> -->
             <p>Choose from the best.</p>
             <button class="btn btn-primary">Download Rider App</button>
           </div>
-          <div class="col-12 col-lg-8 cat-items">
+          <div class="col-12 col-lg-8 cat-items reveal fade-right">
             <ul>
               <li>
                 <img src="img/grocery1.png" alt="" class="bg-white" />
@@ -234,7 +240,7 @@
     </section>
 
     <section class="news-section">
-      <div class="steps">
+      <div class="steps reveal fade-left">
         <div class="container">
           <ul>
             <li>
@@ -289,7 +295,7 @@
       <div class="media-section">
         <div class="container">
           <h3>ApurvaMart Offers!</h3>
-          <div class="row">
+          <div class="row reveal pop">
             <div class="customPrevBtn position-prev">
               <i class="fa fa-angle-left fa-5x" aria-hidden="true"></i>
             </div>
@@ -619,7 +625,7 @@
         new google.translate.TranslateElement(
           {
             pageLanguage: "en",
-            includedLanguages: "en,hi,bn,gu",
+            includedLanguages: "en,hi,ur",
             layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
           },
           "google_translate_element"
@@ -631,5 +637,7 @@
       type="text/javascript"
       src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
     ></script>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
