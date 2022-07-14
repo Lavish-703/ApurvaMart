@@ -180,6 +180,11 @@ body {
 .cat-items ul li {
   width: 33.33%;
   padding: 15px;
+  transition: all 0.5s ease;
+}
+.cat-items ul li:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease;
 }
 /* .cat-items ul li:first-child {
   margin-left: 10%;
@@ -455,5 +460,71 @@ body {
 @media screen and (max-width: 767px) {
   .contact_form-container .contact_box {
     width: auto;
+  }
+}
+
+/* ANIMATIONS */
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+.active.slide-left {
+  animation: fade-left 0.5s ease-in;
+}
+.active.slide-right {
+  animation: fade-right 0.5s ease-in;
+}
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active.pop {
+  animation: pop 0.5s linear;
+}
+
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pop {
+  50% {
+    transform: scale(1.2);
   }
 }
